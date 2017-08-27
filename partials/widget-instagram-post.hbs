@@ -8,7 +8,7 @@ $script(['https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'],fun
           get: 'user', // added
           sortBy: 'most-liked',
           resolution:'low_resolution',
-          template: '<a style="display:inline-block;width:30%;padding-top:30%;margin:1.5%;position:relative;" href="\{{link}}"><div style="height:100%;width:100%;position:absolute;top:0;left:0;background-image:url(\{{image}});background-position:center;background-size:cover;"></div></a>',
+          template: '<a style="display:inline-block;width:30%;padding-top:30%;margin:1.5%;position:relative;" href="\{{link}}"><div style="height:100%;width:100%;position:absolute;top:0;left:0;background-image:url(\{{feature_image}});background-position:center;background-size:cover;"></div></a>',
         }
         $.extend(obj,velma.feed.instagram);
         var feed = new Instafeed(obj);

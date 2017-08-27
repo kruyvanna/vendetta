@@ -10,7 +10,7 @@ $script(['https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'],fun
         get: 'user', // added
         sortBy: 'most-liked',
         resolution:'low_resolution',
-        template: '<a href="\{{link}}"><div class="background-setter insta-img" style="background-image:url(\{{image}});"></div></a>',
+        template: '<a href="\{{link}}"><div class="background-setter insta-img" style="background-image:url(\{{feature_image}});"></div></a>',
         after:function(){
           $("#instafeed").owlCarousel({
             margin:0,

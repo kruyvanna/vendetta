@@ -7,12 +7,12 @@
 	<div class="row">
 		<div class="col-sm-12 mb30">
 			{{#tag}}
-			<section class="author-detail background-setter row" {{#if cover}}style="background-image:url({{cover}});"{{/if}} itemscope itemtype="http://schema.org/Person">
+			<section class="author-detail background-setter row" {{#if cover_image}}style="background-image:url({{cover_image}});"{{/if}} itemscope itemtype="http://schema.org/Person">
 				<div class="col-sm-10 col-sm-offset-1 mt30 mb30">
 					<div class="row">
-						{{#if image}}
+						{{#if feature_image}}
 							<figure class="col-sm-3 col-xs-12 text-center background-setter">
-								<div style="background-image:url({{image}});padding-bottom:100%;" class="background-setter">
+								<div style="background-image:url({{feature_image}});padding-bottom:100%;" class="background-setter">
 								</div>
 							</figure>
 						{{/if}}

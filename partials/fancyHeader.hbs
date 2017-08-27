@@ -1,4 +1,4 @@
-<header class="row noselect fancy-cover{{#if @blog.cover}} background-setter" data-bg="{{@blog.cover}}" id="blog-cover-bg{{/if}}" >
+<header class="row noselect fancy-cover{{#if @blog.cover_image}} background-setter" data-bg="{{@blog.cover_image}}" id="blog-cover-bg{{/if}}" >
 	<div class="col-md-9">
 		{{#if @blog.navigation}}
 		<div class="row">
@@ -63,7 +63,7 @@
 			{{> "link-blog"}}
 		</div>
 	</div>
-	{{^if @blog.cover}}
+	{{^if @blog.cover_image}}
 		<div class="col-sm-offset-3 col-sm-6" style="border-top:solid 1px #ddd;"></div>
 	{{/if}}
 </header>

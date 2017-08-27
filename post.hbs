@@ -8,14 +8,14 @@
 <article itemscope itemtype="http://schema.org/BlogPosting" class="row" style="height:100%;">
 	<link itemprop="mainEntityOfPage" href="{{url absolute='true'}}" />
 	<meta itemprop="publisher" content="{{@blog.title}}"></meta>
-	{{#if image}}
+	{{#if feature_image}}
 	<div class="col-md-6 header-flex-height" style="background:#000;">
 		<div class="header-movable" style="z-index:11;">
 			{{> "header"}}
 		</div>
-		<div class="row header-movable background-setter hidden-xs hidden-sm" style="background-image:url({{image}});height:100%; padding-right:15px;"></div>
+		<div class="row header-movable background-setter hidden-xs hidden-sm" style="background-image:url({{feature_image}});height:100%; padding-right:15px;"></div>
 		<div class="row visible-xs visible-sm">
-			<img src={{image}} itemprop="image" style="width:100%;">
+			<img src={{feature_image}} itemprop="image" style="width:100%;">
 		</div>
 	</div>
 	<div class="col-md-6 post-has-img" >
@@ -26,7 +26,7 @@
 		{{/if}}
 		<main role="main" class="row">
 			<div class="col-sm-offset-1 col-sm-10">
-				{{^if image}}
+				{{^if feature_image}}
 				<div class="row">
 					<div class="col-sm-8 mt30 post-box">
 				{{/if}}
@@ -57,10 +57,10 @@
 				<div class="mb30">
 					{{#author}}
 					<section class="post-author-end row">
-						{{#if image}}
+						{{#if feature_image}}
 						<figure class="col-sm-3 col-xs-12 text-center">
 							<div class="row">
-							<div style="background-image:url({{image}});padding-bottom:100%;" class="background-setter">
+							<div style="background-image:url({{feature_image}});padding-bottom:100%;" class="background-setter">
 							</div>
 						</div>
 						</figure>
@@ -89,7 +89,7 @@
 					{{> "disqus-comments"}}
 					{{> "facebook-comments"}}
 				</div>
-				{{^if image}}
+				{{^if feature_image}}
 			</div>
 			<div class="col-sm-4 mt30 ">
 				{{> "sidebar"}}
@@ -112,7 +112,7 @@
 			<span></span>
 			{{/next_post}}
 		{{#prev_post}}
-		<a href="{{url}}" class="shadow-box transitioned text-center adj-post {{#if image}}background-setter " style="background-image: url({{image}});{{else}}{{/if}}" alt="{{name}}">
+		<a href="{{url}}" class="shadow-box transitioned text-center adj-post {{#if feature_image}}background-setter " style="background-image: url({{feature_image}});{{else}}{{/if}}" alt="{{name}}">
 			<section style="display:inline-block;vertical-align:middle;line-height:normal;">
 					<span class="adjacent-post-category white-if-bg">Previous Post</span>
 					<h2 class="adjacent-post-title white-if-bg">{{title}}</h2>
@@ -120,7 +120,7 @@
 			<span class="valign-support"></span>
 		</a>{{/prev_post}}<span class="smart"></span>{{#prev_post}}<span></span>{{/prev_post}}
 		{{#next_post}}
-		<a href="{{url}}"  class="shadow-box transitioned text-center adj-post {{#if image}} background-setter" style="background-image: url({{image}});{{else}}{{/if}}" alt="{{name}}">
+		<a href="{{url}}"  class="shadow-box transitioned text-center adj-post {{#if feature_image}} background-setter" style="background-image: url({{feature_image}});{{else}}{{/if}}" alt="{{name}}">
 			<section style=" display:inline-block;vertical-align:middle;line-height:normal;">
 					<span class="adjacent-post-category white-if-bg">Next Post</span>
 					<h2 class="adjacent-post-title white-if-bg">{{title}}</h2>

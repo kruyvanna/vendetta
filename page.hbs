@@ -8,14 +8,14 @@
 <article itemscope itemtype="http://schema.org/BlogPosting" class="row" style="height:100%;">
 	<link itemprop="mainEntityOfPage" href="{{url absolute='true'}}" />
 	<meta itemprop="publisher" content="{{@blog.title}}"></meta>
-	{{#if image}}
+	{{#if feature_image}}
 	<div class="col-md-6 header-flex-height" style="background:#000;">
 		<div class="header-movable" style="z-index:11;">
 			{{> "header"}}
 		</div>
-		<div class="row header-movable background-setter hidden-xs hidden-sm" style="background-image:url({{image}});height:100%; padding-right:15px;"></div>
+		<div class="row header-movable background-setter hidden-xs hidden-sm" style="background-image:url({{feature_image}});height:100%; padding-right:15px;"></div>
 		<div class="row visible-xs visible-sm">
-			<img src={{image}} itemprop="image" style="width:100%;">
+			<img src={{feature_image}} itemprop="image" style="width:100%;">
 		</div>
 	</div>
 	<div class="col-md-6 post-has-img" >
@@ -26,7 +26,7 @@
 		{{/if}}
 		<main role="main" class="row">
 			<div class="col-sm-offset-1 col-sm-10">
-				{{^if image}}
+				{{^if feature_image}}
 				<div class="row">
 					<div class="col-sm-12 mt30 post-box">
 				{{/if}}
@@ -43,7 +43,7 @@
 				<section class="post-content mtb30" itemprop="articleBody">
 					{{content}}
 				</section>
-				{{^if image}}
+				{{^if feature_image}}
 			</div>
 		</div>
 		{{else}}

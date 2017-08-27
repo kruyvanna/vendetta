@@ -1,4 +1,7 @@
 {
-  "name": "Vendetta",
-  "version": "1.0.0"
+  "name": "vendetta",
+  "version": "1.0.1",
+  "author": {
+  	"email": "kruyvanna.io@gmail.com"
+  }
 }
