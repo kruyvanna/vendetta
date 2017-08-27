@@ -129,8 +129,7 @@ input:-moz-placeholder { color: #555; }
   outline: none;
   color:#000;
 }
-.footer .newsletter-title:before{
-  content: "Enter your email address to be informed when a new blog hits the site";
+.footer .newsletter-title:before{  
   font-family: 'Roboto';
   color: #999;
   display: block;
